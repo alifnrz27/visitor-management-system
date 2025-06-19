@@ -3,6 +3,11 @@
 use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Page\Dashboard\DashboardController;
+use App\Http\Controllers\Page\Permission\PermissionController;
+use App\Http\Controllers\Page\Profile\ProfileController;
+use App\Http\Controllers\Page\Role\RoleController;
+use App\Http\Controllers\Page\User\UserController;
+use App\Http\Controllers\Page\Visit\VisitController;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Passwords\Confirm;
 use App\Livewire\Auth\Passwords\Email;
@@ -26,6 +31,15 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome')->name('home');
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('profile', [ProfileController::class, 'index'])->name('profile');
+Route::get('profile/change-password', [ProfileController::class, 'changePassword'])->name('profile.change-password');
+Route::get('roles', [RoleController::class, 'index'])->name('roles');
+Route::get('roles/create', [RoleController::class, 'create'])->name('roles.create');
+Route::get('permissions', [PermissionController::class, 'index'])->name('permissions');
+Route::get('permissions/create', [PermissionController::class, 'create'])->name('permissions.create');
+Route::get('users', [UserController::class, 'index'])->name('users');
+Route::get('users/create', [UserController::class, 'create'])->name('users.create');
+Route::get('visits', [VisitController::class, 'index'])->name('visits');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
