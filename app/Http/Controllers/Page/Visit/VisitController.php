@@ -14,4 +14,12 @@ class VisitController extends Controller
 
         return view('page.visit.index');
     }
+
+    public function show($id)
+    {
+        // You can add any logic here to handle the dashboard view
+        // For example, fetching user data, statistics, etc.
+
+        return view('page.visit.show');
+    }
 }

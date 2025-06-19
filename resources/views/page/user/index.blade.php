@@ -40,7 +40,7 @@
                                     <td class="px-4 py-2 text-sm text-gray-800">{{ $role['nama'] }}</td>
                                     <td class="px-4 py-2 text-sm text-gray-800">{{ $role['email'] }}</td>
                                     <td class="px-4 py-2 flex items-center justify-center gap-4">
-                                        <a href="" class="p-2 rounded-lg shadow-lg text-white hover:scale-105 duration-150 bg-blue-500"><i class="fa-solid fa-eye"></i></a>
+                                        <a href="{{ route('users.show', ['id' => 1]) }}" class="p-2 rounded-lg shadow-lg text-white hover:scale-105 duration-150 bg-blue-500"><i class="fa-solid fa-eye"></i></a>
                                         <a href="" class="p-2 rounded-lg shadow-lg text-white hover:scale-105 duration-150 bg-yellow-500"><i class="fa-solid fa-pencil"></i></a>
                                     </td>
                                 </tr>

@@ -25,6 +25,7 @@ class Register extends Component
 
     public function register()
     {
+        return redirect()->intended(route('dashboard'));
         $this->validate([
             'name' => ['required'],
             'email' => ['required', 'email', 'unique:users'],

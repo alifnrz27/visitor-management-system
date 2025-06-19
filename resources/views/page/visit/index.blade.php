@@ -18,6 +18,7 @@
                                 <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Tujuan</th>
                                 <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Waktu Masuk</th>
                                 <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Status</th>
+                                <th class="px-4 py-2 text-sm font-medium text-gray-700 text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200">
@@ -42,6 +43,9 @@
                                             {{ $visit['status'] === 'Selesai' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800' }}">
                                             {{ $visit['status'] }}
                                         </span>
+                                    </td>
+                                    <td class="px-4 py-2 flex items-center justify-center gap-4">
+                                        <a href="{{ route('visits.show', ['id' => 1]) }}" class="p-2 rounded-lg shadow-lg text-white hover:scale-105 duration-150 bg-blue-500"><i class="fa-solid fa-eye"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

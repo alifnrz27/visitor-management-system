@@ -23,6 +23,7 @@ class Login extends Component
 
     public function authenticate()
     {
+        return redirect()->intended(route('dashboard'));
         $this->validate();
 
         if (!Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {

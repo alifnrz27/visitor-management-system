@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Page\User;
+namespace App\Http\Controllers\Page\Device;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class DeviceController extends Controller
 {
     public function index(Request $request)
     {
         // You can add any logic here to handle the dashboard view
         // For example, fetching user data, statistics, etc.
 
-        return view('page.user.index');
+        return view('page.device.index');
     }
 
     public function show($id)
@@ -20,7 +20,7 @@ class UserController extends Controller
         // You can add any logic here to handle the dashboard view
         // For example, fetching user data, statistics, etc.
 
-        return view('page.user.show');
+        return view('page.device.show');
     }
 
     public function create(Request $request)
@@ -28,6 +28,6 @@ class UserController extends Controller
         // You can add any logic here to handle the dashboard view
         // For example, fetching user data, statistics, etc.
 
-        return view('page.user.create');
+        return view('page.device.create');
     }
 }

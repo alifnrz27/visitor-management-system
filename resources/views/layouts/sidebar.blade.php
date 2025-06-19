@@ -1,14 +1,16 @@
 @php
     $mainMenu = [
         ['icon' => 'fa-house', 'label' => 'Dashboard', 'route' => 'dashboard'],
-        ['icon' => 'fa-id-card', 'label' => 'Kunjungan', 'route' => 'visits'],
+        ['icon' => 'fa-id-card', 'label' => 'Visit', 'route' => 'visits'],
     ];
 
     $settingsMenu = [
+        ['icon' => 'fa-camera', 'label' => 'Devices', 'route' => 'devices'],
         ['icon' => 'fa-user', 'label' => 'Profile', 'route' => 'profile'],
         ['icon' => 'fa-users', 'label' => 'Users', 'route' => 'users'],
         ['icon' => 'fa-user-shield', 'label' => 'Roles', 'route' => 'roles'],
         ['icon' => 'fa-key', 'label' => 'Permissions App', 'route' => 'permissions'],
+        ['icon' => 'fa-building', 'label' => 'Floor Building', 'route' => 'floors'],
     ];
 @endphp
 

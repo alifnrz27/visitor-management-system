@@ -1,26 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Page\User;
+namespace App\Http\Controllers\Page\Floor;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class FloorController extends Controller
 {
     public function index(Request $request)
     {
         // You can add any logic here to handle the dashboard view
         // For example, fetching user data, statistics, etc.
 
-        return view('page.user.index');
-    }
-
-    public function show($id)
-    {
-        // You can add any logic here to handle the dashboard view
-        // For example, fetching user data, statistics, etc.
-
-        return view('page.user.show');
+        return view('page.floor.index');
     }
 
     public function create(Request $request)
@@ -28,6 +20,6 @@ class UserController extends Controller
         // You can add any logic here to handle the dashboard view
         // For example, fetching user data, statistics, etc.
 
-        return view('page.user.create');
+        return view('page.floor.create');
     }
 }

@@ -95,21 +95,21 @@
         <!-- Nama -->
         <div class="mb-4">
             <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
-            <input type="text" name="name" id="name" required
+            <input type="text" name="name" id="name" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
         </div>
 
         <!-- Email -->
         <div class="mb-4">
             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" name="email" id="email" required
+            <input type="email" name="email" id="email" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
         </div>
 
         <!-- NID/NIK -->
         <div class="mb-4">
             <label for="nid" class="block text-sm font-medium text-gray-700">NID/NIK</label>
-            <input type="text" name="nid" id="nid" required
+            <input type="text" name="nid" id="nid" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
         </div>
 
@@ -137,7 +137,7 @@
         <!-- Lokasi -->
         <div class="mb-4">
             <label for="location" class="block text-sm font-medium text-gray-700">Lokasi</label>
-            <select name="location" id="location" required
+            <select name="location" id="location" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 <option value="">-- Pilih Lokasi --</option>
                 <option value="gedung-a">Gedung A</option>
@@ -148,7 +148,7 @@
         <!-- Lantai -->
         <div class="mb-4">
             <label for="floor" class="block text-sm font-medium text-gray-700">Lantai</label>
-            <select name="floor" id="floor" required
+            <select name="floor" id="floor" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 <option value="">-- Pilih Lantai --</option>
                 <option value="1">Lantai 1</option>
@@ -160,7 +160,7 @@
         <!-- Alasan Kunjungan -->
         <div class="mb-6">
             <label for="reason" class="block text-sm font-medium text-gray-700">Alasan Kunjungan</label>
-            <textarea name="reason" id="reason" rows="3" required
+            <textarea name="reason" id="reason" rows="3" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Tulis alasan kunjungan Anda..."></textarea>
         </div>

@@ -1,7 +1,8 @@
 <div x-data="{ open: false }" class="bg-white border-b border-gray-200 px-6 py-3 shadow-md w-full z-100">
     <div class="w-full flex justify-between">
         <!-- Logo -->
-        <div @click="sidebar = !sidebar" class="flex items-center">
+        <div @click="sidebar = !sidebar" class="flex items-center gap-2 cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
             <div class="flex items-center">
                 <img src="{{ asset('assets/logo/logo.png') }}" alt="Logo" class="h-8">
             </div>
