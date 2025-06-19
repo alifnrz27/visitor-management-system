@@ -28,7 +28,7 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <p class="text-sm text-gray-500">Email</p>
-                                    <p class="text-base text-gray-800">budi.santoso@example.com</p>
+                                    <p class="text-base text-gray-800 truncate">budi.santoso@example.com</p>
                                 </div>
                                 <div>
                                     <p class="text-sm text-gray-500">Nomor Telepon</p>
